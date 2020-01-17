@@ -12,6 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 import java.util.List;
 
 @Controller
+@CrossOrigins("*", methods = { RequestMethod.GET })
 public class AppController {
     @Autowired
     private ProductService service;
